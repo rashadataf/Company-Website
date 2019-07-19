@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -11,3 +10,54 @@ html {
   font-family: "Caveat", cursive;
   font-size: 62.5%;
 }
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  background-color: #333333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__links li a {
+  color: #ffffff;
+  font-weight: 900;
+  padding: 1rem;
+  margin: 0 0.25rem;
+}
+
+.nav__links li a:hover {
+  background-color: rgba(81, 255, 0, 0.801);
+  border-radius: 1rem;
+}
+
+.green {
+  color: #51ff00;
+}
+
+.white {
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

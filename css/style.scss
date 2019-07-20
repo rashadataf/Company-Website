@@ -8,8 +8,9 @@
 }
 
 html {
-  font-family: "Caveat", cursive;
+  font-family: "Merriweather", serif;
   font-size: 62.5%;
+  line-height: 2.5rem;
 }
 
 a {
@@ -22,7 +23,8 @@ a {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
+  height: 10vh;
+  font-size: 1.5rem;
   background-color: #333333;
   position: -webkit-sticky;
   position: sticky;
@@ -34,14 +36,13 @@ a {
   justify-content: space-between;
   z-index: 1;
   padding: 1rem;
+
   &__logo {
-    &--symbol {
-    }
-    &--text {
-    }
+    font-family: "Caveat", cursive;
+    font-size: 3rem;
   }
 
-  &__links {
+  & &__links {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -57,7 +58,7 @@ a {
     li {
       a {
         color: #ffffff;
-        font-weight: 900;
+        font-weight: 700;
         padding: 1rem;
         margin: 0 0.25rem;
 
@@ -79,4 +80,71 @@ a {
 
 .white {
   color: #ffffff;
+}
+
+.header {
+  width: 100vw;
+  height: 90vh;
+  background: #333 url(../img/showcase.jpg) no-repeat center center/cover;
+  // margin-top: -5.8rem;
+  color: #ffffff;
+
+  &__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    // position: absolute;
+    // top: 6rem;
+    // left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    &--heading {
+      font-size: 4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    &--text {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      letter-spacing: 0.3rem;
+    }
+
+    &--btn {
+      color: #ffffff;
+      font-size: 2rem;
+      // display: inline-block;
+      padding: 0.5rem 2rem;
+      background-color: #46ad16;
+      border: none;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      border-radius: 1rem;
+
+      &:hover {
+        background-color: #274b16;
+      }
+    }
+  }
 }

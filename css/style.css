@@ -7,8 +7,9 @@
 }
 
 html {
-  font-family: "Caveat", cursive;
+  font-family: "Merriweather", serif;
   font-size: 62.5%;
+  line-height: 2.5rem;
 }
 
 a {
@@ -19,7 +20,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
+  height: 10vh;
+  font-size: 1.5rem;
   background-color: #333333;
   position: -webkit-sticky;
   position: sticky;
@@ -31,7 +33,12 @@ a {
   padding: 1rem;
 }
 
-.nav__links {
+.nav__logo {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+}
+
+.nav .nav__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,14 +48,14 @@ a {
   list-style: none;
 }
 
-.nav__links li a {
+.nav .nav__links li a {
   color: #ffffff;
-  font-weight: 900;
+  font-weight: 700;
   padding: 1rem;
   margin: 0 0.25rem;
 }
 
-.nav__links li a:hover {
+.nav .nav__links li a:hover {
   background-color: rgba(81, 255, 0, 0.801);
   border-radius: 1rem;
 }
@@ -59,5 +66,57 @@ a {
 
 .white {
   color: #ffffff;
+}
+
+.header {
+  width: 100vw;
+  height: 90vh;
+  background: #333 url(../img/showcase.jpg) no-repeat center center/cover;
+  color: #ffffff;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header__container--heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+}
+
+.header__container--text {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.header__container--btn {
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  background-color: #46ad16;
+  border: none;
+  border-radius: 1rem;
+}
+
+.header__container--btn:hover {
+  background-color: #274b16;
 }
 /*# sourceMappingURL=style.css.map */

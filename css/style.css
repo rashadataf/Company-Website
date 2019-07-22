@@ -122,6 +122,7 @@ a {
 
 .what__section {
   max-width: 100%;
+  height: 50vh;
   margin-top: 3rem;
 }
 
@@ -175,5 +176,54 @@ a {
 
 .what__section__container__items--item p {
   font-size: 1.5rem;
+}
+
+.who__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.3rem;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.who__section--image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: url(../img/people.jpg) no-repeat center center/cover;
+}
+
+.who__section__text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 2rem;
+}
+
+.who__section__text--title {
+  font-size: 3rem;
+}
+
+.who__section__text p {
+  font-size: 1.5rem;
+}
+
+.who__section__text h3 {
+  font-size: 2rem;
+}
+
+.who__section__text__team {
+  margin: 1.5rem 0 0 0;
+  list-style: none;
+}
+
+.who__section__text__team--member {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.who__section__text__team--member:last-child {
+  margin-bottom: -2rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -211,6 +211,7 @@ a {
 
 .who__section__text h3 {
   font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .who__section__text__team {
@@ -225,5 +226,26 @@ a {
 
 .who__section__text__team--member:last-child {
   margin-bottom: -2rem;
+}
+
+.clients__section {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.clients__section--title {
+  font-size: 3rem;
+}
+
+.clients__section__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4rem 0;
+}
+
+.clients__section__items--client {
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -251,6 +251,7 @@ a {
     }
     h3 {
       font-size: 2rem;
+      margin-top: 2rem;
     }
     &__team {
       margin: 1.5rem 0 0 0;
@@ -263,6 +264,29 @@ a {
           margin-bottom: -2rem;
         }
       }
+    }
+  }
+}
+
+.clients__section {
+  max-width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+
+  &--title {
+    font-size: 3rem;
+  }
+
+  &__items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4rem 0;
+
+    &--client {
+      width: 50%;
     }
   }
 }

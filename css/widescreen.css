@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=widescreen.css.map */
+.what__section {
+  height: 30rem;
+}
+
+.what__section__container__items--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.what__section__container__items--item i {
+  margin-right: 1.3rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 0;
+}
+
+.what__section #map {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.what__section .leaflet-container {
+  width: 100%;
+}
+/*# sourceMappingURL=widescreen.css.map */

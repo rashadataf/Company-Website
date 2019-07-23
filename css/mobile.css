@@ -1,1 +1,64 @@
-/* No CSS *//*# sourceMappingURL=mobile.css.map */
+html,
+body {
+  overflow-x: hidden;
+}
+
+.what__section {
+  height: 40rem;
+}
+
+.what__section__container__items {
+  display: block;
+  padding: 1rem;
+}
+
+.what__section__container__items--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+.what__section__container__items--item i {
+  margin-right: 1.3rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    height: 20vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .nav__logo {
+    text-align: center;
+  }
+  .nav__links {
+    padding: 0.5rem;
+  }
+  .header {
+    height: 80vh;
+  }
+  .who__section {
+    display: block;
+  }
+  .who__section--image {
+    display: none;
+  }
+  .contact__section {
+    display: block;
+  }
+  .contact__section--map {
+    height: 50vh;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

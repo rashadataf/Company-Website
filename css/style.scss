@@ -297,6 +297,7 @@ a {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #dddddd;
   &__form {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -351,4 +352,21 @@ a {
     -ms-flex: 1;
     flex: 1;
   }
+}
+
+.footer {
+  background-color: #333333;
+  p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+  }
+}
+
+#map {
+  z-index: 0;
+}
+
+.leaflet-control-zoom {
+  top: 40px;
 }

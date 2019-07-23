@@ -1,16 +1,22 @@
-// Initialize and add the map
-function initMap() {
-  // Your Location
-  // {lat: -34.397, lng: 150.644}
-  const loc = { lat: 35.645427, lng: 35.851077 };
-  // Centered map on location
-  const map = new google.maps.Map(
-    document.querySelector(".contact__section--map"),
+// Initialize the map
+initMap = () => {
+  self.newMap = L.map("map", {
+    //   the location of my village in Syria
+    center: [35.645427, 35.851077],
+    zoom: 14,
+    scrollWheelZoom: false
+  });
+  L.tileLayer(
+    "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}",
     {
-      center: loc,
-      zoom: 12
+      mapboxToken:
+        "pk.eyJ1IjoicmFzaGFkYXRhZiIsImEiOiJjandlbXh3Z3AxZTYwM3ltcXJyanpzd3NjIn0.BKKDP_NvFCbASFbCNPb3qA",
+      maxZoom: 18,
+      attribution:
+        'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      id: "mapbox.streets"
     }
-  );
-  //   the marker, positioned at location
-  const marker = new google.maps.Marker({ position: loc, map: map });
-}
+  ).addTo(newMap);
+};

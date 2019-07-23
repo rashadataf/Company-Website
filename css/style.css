@@ -248,4 +248,64 @@ a {
 .clients__section__items--client {
   width: 50%;
 }
+
+.contact__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__section__form {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: #51a02c;
+  color: #ffffff;
+}
+
+.contact__section__form--heading {
+  font-size: 2.5rem;
+  margin: auto 1rem;
+}
+
+.contact__section__form p {
+  font-size: 1.5rem;
+}
+
+.contact__section__form label {
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.contact__section__form input {
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  margin: 1rem;
+}
+
+.contact__section__form textarea {
+  font-size: 2rem;
+  padding: 0.75rem;
+  margin: 1rem;
+}
+
+.contact__section__form--button {
+  background-color: #333333;
+  border: none;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+
+.contact__section__form--button:hover {
+  background-color: #51ff00;
+  font-weight: bolder;
+  color: #131212;
+}
+
+.contact__section--map {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
 /*# sourceMappingURL=style.css.map */

@@ -290,3 +290,65 @@ a {
     }
   }
 }
+
+.contact__section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  &__form {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #51a02c;
+    color: #ffffff;
+
+    &--heading {
+      font-size: 2.5rem;
+      margin: auto 1rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    label {
+      font-size: 1.5rem;
+      margin: 1rem;
+      text-align: center;
+    }
+    input {
+      font-size: 1.5rem;
+      padding: 0.75rem;
+      margin: 1rem;
+    }
+    textarea {
+      font-size: 2rem;
+      padding: 0.75rem;
+      margin: 1rem;
+    }
+
+    &--button {
+      background-color: #333333;
+      border: none;
+      color: #ffffff;
+      -webkit-border-radius: 1rem;
+      -moz-border-radius: 1rem;
+      border-radius: 1rem;
+      &:hover {
+        background-color: #51ff00;
+        font-weight: bolder;
+        color: #131212;
+      }
+    }
+  }
+
+  &--map {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
